@@ -6,10 +6,10 @@ html, body {
 } 
 body 
     {
-        background-image: url('seattle.jpg');
+        background-image: url('seattle-bg.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: left center;
+        background-position: 50% 80%;
     }
     
 img.logo {
@@ -19,7 +19,7 @@ img.logo {
 }
 
 #login {
-  background-color: rgba(245,255,248,.65);
+  background-color: rgba(245,255,248,.75);
   height: 250px;
   width: 400px;
   margin: 0 auto;
