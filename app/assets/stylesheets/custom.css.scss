@@ -1,0 +1,31 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html, body {
+    height:100%;
+} 
+body 
+    {
+        background-image: url('seattle.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    
+img.logo {
+  width: 250px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#login {
+  background-color: rgba(245,255,248,.65);
+  height: 250px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+#login-form {
+  padding:20px;
+}
