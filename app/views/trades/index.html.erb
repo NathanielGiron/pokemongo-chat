@@ -1,0 +1,19 @@
+<h1>Listing all Trades</h1>
+
+<p><%= link_to "Create New Trade", new_trade_path %></p>
+<table border="1">
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th colspan="3">Actions</th>
+    </tr>
+    <% @trades.each do |trade| %>
+    <tr>
+        <td><%= trade.title %></td>
+        <td><%= trade.description %></td>
+        <td><%= link_to "Edit", edit_trade_path(trade) %></td>
+        <td><%= link_to "Show", trade_path(trade) %></td>
+        <td><%= link_to "Delete", trade_path(trade), method: :delete, data: {confirm: "Are you sure?"} %></td>
+    </tr>
+    <% end %>
+</table>
